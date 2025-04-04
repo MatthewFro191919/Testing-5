@@ -1,12 +1,12 @@
-package states;
+package;
 
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.effects.FlxFlicker;
 import lime.app.Application;
-import states.editors.MasterEditorMenu;
+import editors.MasterEditorMenu;
 import options.OptionsState;
-import backend.MusicBeatState;
+import MusicBeatState;
 
 enum ExtrasMenuColumn {
 	LEFT;
@@ -276,7 +276,7 @@ class ExtrasMenuState extends MusicBeatState
 				selectedSomethin = true;
 				FlxG.mouse.visible = false;
 				FlxG.sound.play(Paths.sound('cancelMenu'));
-				MusicBeatState.switchState(new TitleState());
+				MusicBeatState.switchState(new MainMenuState());
 			}
 
 			if (controls.ACCEPT || (FlxG.mouse.overlaps(menuItems, FlxG.camera) && FlxG.mouse.justPressed && allowMouse))
