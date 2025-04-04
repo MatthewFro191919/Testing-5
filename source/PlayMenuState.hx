@@ -4,9 +4,9 @@ import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.effects.FlxFlicker;
 import lime.app.Application;
-import states.editors.MasterEditorMenu;
+import editors.MasterEditorMenu;
 import options.OptionsState;
-import backend.MusicBeatState;
+import MusicBeatState;
 
 enum PlayMenuColumn {
 	LEFT;
