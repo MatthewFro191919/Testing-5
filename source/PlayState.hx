@@ -118,9 +118,6 @@ class PlayState extends MusicBeatState
 	public static var storyDifficulty:Int = 1;
 
 	public static var wasOriginallyFreeplay:Bool = false;
-	public static var storyWeek:Int = 0;
-	public static var storyPlaylist:Array<String> = [];
-	public static var storyDifficulty:Int = 1;
 	public var firstNoteStrumTime:Float = 0;
 	var winning:Bool = false;
 	var losing:Bool = false;
