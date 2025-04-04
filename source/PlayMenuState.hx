@@ -1,4 +1,4 @@
-package states;
+package;
 
 import flixel.FlxObject;
 import flixel.FlxSprite;
@@ -272,7 +272,7 @@ class PlayMenuState extends MusicBeatState
 				selectedSomethin = true;
 				FlxG.mouse.visible = false;
 				FlxG.sound.play(Paths.sound('cancelMenu'));
-				MusicBeatState.switchState(new TitleState());
+				MusicBeatState.switchState(new MainMenuState());
 			}
 
 			if (controls.ACCEPT || (FlxG.mouse.overlaps(menuItems, FlxG.camera) && FlxG.mouse.justPressed && allowMouse))
@@ -363,7 +363,7 @@ class PlayMenuState extends MusicBeatState
 			{
 				selectedSomethin = true;
 				FlxG.mouse.visible = false;
-				MusicBeatState.switchState(new states.FreeplayState());
+				MusicBeatState.switchState(new FreeplayState());
 			    PlayState.isSecret = true;
 			}
 		}
