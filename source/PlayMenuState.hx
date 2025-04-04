@@ -338,13 +338,13 @@ class PlayMenuState extends MusicBeatState
 									PlayState.stageUI = 'normal';
 								}
 							case 'extrended':
-								MusicBeatState.switchState(new states.FreeplayState());
+								MusicBeatState.switchState(new FreeplayState());
 								PlayState.isUniverse = true;
 						        case 'golden':
-								MusicBeatState.switchState(new states.FreeplayState());
+								MusicBeatState.switchState(new FreeplayState());
 								PlayState.isGolden = true;
 							case 'daveandbambi':
-								MusicBeatState.switchState(new states.FreeplayState());
+								MusicBeatState.switchState(new FreeplayState());
 								PlayState.isDaveAndBambi = true;
 						}
 					});
